@@ -1,0 +1,75 @@
+<html></html>
+    <head>
+        <title>demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+        </style>
+   
+    <body>
+        <div class="mycontainer">
+            <div class="left">
+                <a href="" style="margin-top: 30px;"><i class="fa-brands fa-uncharted" style="color: #36cf95;"></i></a>
+                <a href=""><i class="fa-solid fa-house" style="color:#6b748c"></i></a>
+                <a href=""><i class="fa-solid fa-chart-line" style="color:#6b748c"></i></a>
+                <a href=""><i class="fa-regular fa-clock" style="color:#6b748c"></i></a>
+                <a href=""><i class="fa-solid fa-calendar-days" style="color:#6b748c"></i></a>
+                <a href=""><i class="fa-solid fa-comments" style="color:#6b748c"></i></a>
+                <a href="login.html"><i class="fa-solid fa-right-from-bracket" style="color:#6b748c"></i></a>
+            </div>
+            
+            <div class="right">
+
+               <div class="header">
+                <div class="head">
+                    <a href="">Overview</a>
+                    <a href="">Patient Leads</a>
+                    <a href="">Web Presence</a>
+                    <a href="">Reputation</a>
+                </div>
+                
+                <div class="search-bar">
+                  
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color:#6b748c"></i>  Search</button>
+                        
+                </div>
+               </div>
+
+               <div class="main">
+                <div class="main1">
+                    Overall rating
+                </div>
+
+                <div class="main2">
+                    Public Review
+                </div>
+
+                <div class="main3">
+                    Patient sentiment
+                    <p style="text-align: center; font-size: 50px; color:#23d593; padding-top: 50px;"><i class="fa-regular fa-face-laugh-beam"></i></p>
+                    <p style="color: #23d593; text-align: center; padding-top: 10px;"><strong>SUPERB!</strong></p>
+                </div>
+
+               </div>
+
+               <div class="foot">
+                <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+               </div>
+
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+           window.onload = async function() {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                localStorage.removeItem('token')
+                alert('You are not logged in');
+                window.location.href = 'login.html';
+        
+            } }
+        </script>
+    </body>
+</html>

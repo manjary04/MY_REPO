@@ -1,0 +1,173 @@
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: cursive;
+            }
+            
+             
+            .mycontainer{
+                display: flex;
+                background-color: #ffffff;
+                height: 100vh;
+            }
+            .left{
+
+                flex:0.3;
+                background-color:#fcfafa;
+                display: flex;
+                flex-direction: column;
+                font-size: 25px;
+                justify-content: flex-start;
+                align-items: center;
+                
+            }
+            .left a{
+                margin: 20px;
+                
+            }
+            .left a:hover{
+                cursor: pointer;
+                color: rgb(0, 17, 255);
+            }
+           
+            
+            .right{
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                flex:4;
+                margin: 2px;
+                
+            }
+        
+            .header{ 
+                display: flex;
+                background-color: #ffffff;
+                height: 4rem;
+                border-radius: 10px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                margin: 10px 5px 5px 5px;
+                align-items: center;
+                justify-content: space-between;
+                
+            } 
+            .head a{
+                margin: 20px;
+                color: #000000;
+                text-decoration: none;
+            }
+           
+            .search-bar input{
+                padding: 5px;
+                font-size: 16px;
+               
+            }
+            .search-bar button {
+                padding: 5px 10px;
+                font-size: 16px;
+                cursor: pointer;
+                margin-right: 10px;
+                margin-left: 5px;
+            }
+          
+            .main{
+                display: flex;
+                height: 40rem;
+               /* border-radius: 10px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+                margin: 10px 5px;
+                flex:1;
+                
+             
+                
+            }
+            .main1{
+                background-color: #ffffff;
+                height:17rem;
+                
+                border-radius: 10px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                margin: 3px;
+                margin-left: 0px;
+                font-family: cursive;
+                padding: 20px 0px 0px 20px;
+                flex: 1;
+                
+
+            }
+            .main2{
+                background-color: #ffffff;
+                height:17rem;
+                
+                border-radius: 10px;
+                margin: 3px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                padding: 20px 0px 0px 20px;
+                flex: 2;
+
+            }
+            .main3{
+                background-color: #ffffff;
+                height:17rem;
+                border-radius: 10px;
+                margin: 3px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                padding: 20px 0px 0px 20px;
+                flex: 1;
+
+            }
+            .foot{
+          
+                background-color:#ffffff;
+                height: 5rem;
+                color: #000000;    
+                border-radius: 10px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                
+            }
+            .foot p{
+                text-align: center;
+                padding-top: 30px;
+            }
+            /* @media only screen and  (max-width:1000px){
+                .head a{
+                    margin: 3px;
+                    font-size: 12px;
+                }
+                .search-bar input{
+                    padding: 3px;
+                    font-size: 12px;
+                   
+                }
+                .search-bar button {
+                    padding: 3px 7px;
+                    font-size: 12px;
+                    cursor: pointer;
+                    margin-right: 7px;
+                    margin-left: 3px;
+                }
+                .head{
+                    flex: 2;
+                    
+                } 
+                .main{
+                    font-size: 12px;
+                }
+                .foot{
+                    font-size: 12px;
+                }
+               
+
+            } */
+          @media screen and(max-width:800px) {
+            .main{
+                display: flex;
+                flex-direction: column;
+            }
+            .main1, .main2, .main3{
+                
+            }
+          }
+        
